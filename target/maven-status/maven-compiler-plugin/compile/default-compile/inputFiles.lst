@@ -1,0 +1,14 @@
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/provider/SchemaBasedMultiTenantConnectionProvider.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/resolver/CurrentTenantIdentifierResolverImpl.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/service/BadListAndGoodListService.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/repository/WalletsRepository.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/service/BadListAndGoodListServiceImpl.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/repository/PendingactivityRepository.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/repository/ActivitiesRepository.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/config/DBConfig.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/utils/PropertiesRetrieve.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/BadListGoodListApplication.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/resolver/DetectedTenant.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/repository/WalletOrganizationRepository.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/config/MongoDBConfig.java
+/home/omni/Downloads/lambda-batch/src/main/java/com/genfare/cloud/batch/datasource/DataSourceFactory.java

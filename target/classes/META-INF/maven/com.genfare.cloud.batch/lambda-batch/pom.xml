@@ -1,0 +1,145 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.genfare.cloud.batch</groupId>
+	<artifactId>lambda-batch</artifactId>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
+
+	<name>lambda-batch</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<genfare.cloud.version>12.0.0-build143</genfare.cloud.version>
+		<version.maven.assembly>3.1.1</version.maven.assembly>
+		<version.mysql.connector>8.0.16</version.mysql.connector>
+		<version.mongo.driver>3.6.3</version.mongo.driver>
+		<version.shade.plugin>3.2.1</version.shade.plugin>
+		<version.amazonaws.lambda>1.1.0</version.amazonaws.lambda>
+		<version.hibernate.core>5.4.3.Final</version.hibernate.core>
+		<version.spring.data>2.1.9.RELEASE</version.spring.data>
+		<version.hikari.data>2.6.1</version.hikari.data>
+	</properties>
+
+	<dependencies>
+	<dependency>
+			<groupId>org.threeten</groupId>
+			<artifactId>threetenbp</artifactId>
+			<version>0.7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>${version.shade.plugin}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${version.mysql.connector}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>${version.mongo.driver}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${version.hibernate.core}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${version.spring.data}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>1.11.271</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-lambda-java-core</artifactId>
+			<version>${version.amazonaws.lambda}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.genfare.cloud</groupId>
+			<artifactId>model</artifactId>
+			<version>${genfare.cloud.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.genfare.cloud</groupId>
+			<artifactId>core</artifactId>
+			<version>${genfare.cloud.version}</version>
+		</dependency>
+		<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.4</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+<!-- <dependency> -->
+<!--     <groupId>org.mockito</groupId> -->
+<!--     <artifactId>mockito-all</artifactId> -->
+<!--     <version>1.9.5</version> -->
+<!--     <scope>test</scope> -->
+<!-- </dependency> -->
+  <!-- https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito -->
+<!-- <dependency> -->
+<!--     <groupId>org.powermock</groupId> -->
+<!--     <artifactId>powermock-api-mockito</artifactId> -->
+<!--     <version>1.7.4</version> -->
+<!--     <scope>test</scope> -->
+<!-- </dependency> -->
+
+<!-- <dependency> -->
+<!--     <groupId>org.powermock</groupId> -->
+<!--     <artifactId>powermock-module-junit4</artifactId> -->
+<!--     <version>2.0.2</version> -->
+<!--     <scope>test</scope> -->
+<!-- </dependency> -->
+    
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>${version.maven.assembly}</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>assemble-all</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>genfare-repository</id>
+			<url>http://repository.gfcp.io/nexus/content/groups/Genfare/</url>
+		</repository>
+	</repositories>
+</project>

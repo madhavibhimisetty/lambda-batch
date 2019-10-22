@@ -1,0 +1,5 @@
+default:
+  db:
+    username: vagrant
+    password: vagrant
+    url: jdbc:mysql://localhost:3306/cdta?createDatabaseIfNotExist=true

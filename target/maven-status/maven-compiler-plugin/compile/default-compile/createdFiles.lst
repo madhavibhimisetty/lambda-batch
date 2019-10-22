@@ -1,0 +1,14 @@
+com/genfare/cloud/batch/repository/ActivitiesRepository.class
+com/genfare/cloud/batch/repository/WalletsRepository.class
+com/genfare/cloud/batch/repository/PendingactivityRepository.class
+com/genfare/cloud/batch/BadListGoodListApplication.class
+com/genfare/cloud/batch/config/DBConfig.class
+com/genfare/cloud/batch/provider/SchemaBasedMultiTenantConnectionProvider.class
+com/genfare/cloud/batch/config/MongoDBConfig.class
+com/genfare/cloud/batch/repository/WalletOrganizationRepository.class
+com/genfare/cloud/batch/service/BadListAndGoodListServiceImpl.class
+com/genfare/cloud/batch/resolver/CurrentTenantIdentifierResolverImpl.class
+com/genfare/cloud/batch/service/BadListAndGoodListService.class
+com/genfare/cloud/batch/datasource/DataSourceFactory.class
+com/genfare/cloud/batch/resolver/DetectedTenant.class
+com/genfare/cloud/batch/utils/PropertiesRetrieve.class
