@@ -17,7 +17,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<genfare.cloud.version>12.0.0-build143</genfare.cloud.version>
 		<version.maven.assembly>3.1.1</version.maven.assembly>
-		<version.mysql.connector>8.0.16</version.mysql.connector>
+		<version.mysql.connector>8.0.28</version.mysql.connector>
 		<version.mongo.driver>3.6.3</version.mongo.driver>
 		<version.shade.plugin>3.2.1</version.shade.plugin>
 		<version.amazonaws.lambda>1.1.0</version.amazonaws.lambda>
